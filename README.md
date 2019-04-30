@@ -21,6 +21,28 @@ Some markdown content
     }
 </style>
 ```
+`vue.config.js`
+```javascript
+module.exports = {
+    configureWebpack: {
+        module: {
+            rules: [
+                {
+                    test: /\.mdvue$/,
+                    use: [
+                        {
+                            loader: 'vue-loader'
+                        },
+                        {
+                            loader: 'mdvue-loader'
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+};
+```
 
 ## Thanks
 * [vmark-loader](https://github.com/egoist/vmark-loader)
