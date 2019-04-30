@@ -1,7 +1,9 @@
 # mdvue
 Render vue components from markdown files.
 
+---
 # Example
+`home.mdvue`
 ```markdown
 import HelloWorld from '@/components/HelloWorld'
 import ByeWorld from '@/components/ByeWorld'
@@ -21,6 +23,7 @@ Some markdown content
     }
 </style>
 ```
+---
 `vue.config.js`
 ```javascript
 module.exports = {
@@ -42,6 +45,26 @@ module.exports = {
         }
     }
 };
+```
+---
+`app.vue`
+```javascript
+<template>
+  <div id="app">
+    <home/>
+  </div>
+</template>
+
+<script>
+import home from 'home.mdvue';
+
+export default {
+  name: 'app',
+  components: {
+    home,
+  }
+}
+</script>
 ```
 
 ## Thanks
