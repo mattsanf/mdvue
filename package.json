@@ -1,0 +1,23 @@
+{
+  "name": "mdvue",
+  "version": "0.0.1",
+  "description": "Render vue components from markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mattsanf/mdvue.git"
+  },
+  "keywords": [
+    "vue",
+    "markdown"
+  ],
+  "author": "Matthew Sanford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattsanf/mdvue/issues"
+  },
+  "homepage": "https://github.com/mattsanf/mdvue#readme"
+}
