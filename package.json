@@ -1,7 +1,7 @@
 {
   "name": "mdvue",
   "version": "0.0.1",
-  "description": "Render vue components from markdown files.",
+  "description": "Render vue components from markdown files. Thanks to https://github.com/egoist/vmark-loader",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mattsanf/mdvue/issues"
   },
-  "homepage": "https://github.com/mattsanf/mdvue#readme"
+  "homepage": "https://github.com/mattsanf/mdvue#readme",
+  "dependencies": {
+    "saber-markdown": "^0.0.3"
+  }
 }
